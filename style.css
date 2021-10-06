@@ -2,6 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 ul {
     list-style: none;
     display: flex;
@@ -44,9 +48,20 @@ li:hover {
     margin-left: 20px;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     font-variant: small-caps;
-    cursor: pointer;
 }
-.mainIcon:hover {
+.mainIcon a{
+    text-decoration: none;
+    color: black;
+}
+.mainIcon a:hover {
+    color: #A60425FF;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    text-decoration: none;
     color: #A60425FF;
 }
 

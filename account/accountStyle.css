@@ -1,0 +1,122 @@
+header {
+    letter-spacing: 1px;
+    height: 5em;
+    padding: 0.3em 5%;
+    display: flex;
+}
+* {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-variant: small-caps;
+}
+textarea {
+    border-radius: 15px;
+    margin-left: 50px;
+    background-color: #F5F5F5FF;
+    border: 0px;
+    padding: 10px 14px;
+    font-size: 17px;
+}
+.centerWord {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: bolder;
+    margin-left: 10px;
+    color: #66676AFF;
+}
+button a {
+    text-decoration: none;
+    color: black;
+}
+button a:hover {
+    text-decoration: none;
+}
+
+#btnEn-Kz {
+    margin-left: 82%;
+    margin-top: 0.5%;
+    border-radius: 15px;
+    border: 1px gray dotted;
+    height: 80%;
+    width: 120px;
+    background-color: white;
+}
+#btnEn-Kz:hover {
+    background-color: gray;
+    color:white;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+h1 a:hover{
+    text-decoration: none;
+    color: #A60425FF;
+}
+
+.mainDiv {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    letter-spacing: 0.3px;
+}
+
+.leftWord {
+    margin-left: 30px;
+}
+.createBtn {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    width: 20rem;
+}
+.createBtn:hover {
+    background-color: black;
+    color: white;
+}
+#sign {
+    border: 0px solid black;
+    background-color: #3D69E1FF;
+    color: white;
+    border-radius: 15px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    width: 20rem;
+}
+#sign:hover {
+    background-color: #3257BAFF;
+}
+#canc {
+    border: 0px solid black;
+    border-radius: 15px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    width: 20rem;
+}
+#canc:hover{
+    background-color: #D9D9D9FF;
+}
+.question{
+    margin-left: 5rem;
+    margin-top: 2rem;
+    width: 20rem;
+}
+footer {
+    margin: 16px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+button {
+    font-size: 16px;
+    padding: 5px 0px;
+}
+p {
+    margin-left: 50px;
+}
