@@ -8,7 +8,8 @@ ul {
 }
 li {
     cursor: pointer;
-    margin: 20px;
+    margin: 20px 10px;
+    padding: 0px 10px;
 }
 header {
     background-color: rgba(1, 1, 1, 0);
@@ -32,8 +33,11 @@ header {
 }
 li:hover {
     color: #A60425FF;
-    margin: 10px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: rgba(130, 130, 130, 0.5);
 }
+
 
 .mainIcon {
     margin-top: 10px;
@@ -49,6 +53,40 @@ li:hover {
 body {
     background-image: url("res/Roadster.jpg");
     background-size: cover;
+}
+.mainDiv {
+    padding-top: 150px;
+}
+.mainWord {
+    padding-left: 670px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    animation-duration: 1s;
+    animation-name: WordAppearing;
+}
+@keyframes WordAppearing {
+    from {
+        padding-left: 1000px;
+    }
+    to {
+        padding-left: 670px;
+    }
+}
+.link {
+    padding-left: 710px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    animation-duration: 1s;
+    animation-name: linkAppearing;
+}
+a {
+    color: black;
+}
+@keyframes linkAppearing {
+    from {
+        padding-left: 1000px;
+    }
+    to {
+        padding-left: 710px;
+    }
 }
 
 
@@ -109,4 +147,32 @@ body {
 }
 .btnWhite:active{
     background-color: gray;
+}
+
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 750px;
+    margin-top: 410px;
+    animation: down 3s infinite;
+}
+@keyframes down {
+    from {
+        margin-top: 410px;
+    }
+    50% {
+        margin-top: 430px;
+    }
+    to {
+        margin-top: 410px;
+    }
+}
+
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
