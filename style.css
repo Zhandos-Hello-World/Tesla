@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    cursor: pointer;
+    margin: 20px;
+}
+header {
+    background-color: rgba(1, 1, 1, 0);
+    display: flex;
+    position: fixed;
+    animation-duration: 1s;
+    animation-name: headerAnimation;
+}
+@keyframes headerAnimation {
+    from {
+        margin-top: -30px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+.spacingDivHeader {
+    display: flex;
+    margin-left: 170px;
+}
+li:hover {
+    color: #A60425FF;
+    margin: 10px;
+}
+
+.mainIcon {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+.mainIcon:hover {
+    color: #A60425FF;
+}
+
+body {
+    background-image: url("res/Roadster.jpg");
+    background-size: cover;
+}
+
+
+.btnDiv {
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    animation-duration: 1s;
+    animation-name: btnDiv;
+}
+@keyframes btnDiv {
+    from {
+        top: 650px;
+    }
+    to {
+        top: 600px;
+    }
+}
+
+
+.btnBlack {
+    padding: 9px 60px;
+    margin: 0px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 0px;
+}
+.btnBlack:hover {
+    color: rgba(138, 3, 3, 1);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0px;
+}
+.btnBlack:active{
+    background-color: gray;
+}
+
+.btnWhite {
+    padding: 9px 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #302F28FF;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+
+
+.btnWhite:hover {
+    color: white;
+    background-color: rgba(138, 3, 3, 0.7);
+    border: 0px;
+}
+.btnWhite:active{
+    background-color: gray;
+}
