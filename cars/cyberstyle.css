@@ -5,9 +5,8 @@
 }
 
 
-  
 .cybr-btn {
-    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+    --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
     --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
     --primary-hue: 0;
     --primary-lightness: 50;
@@ -74,7 +73,7 @@
   
   .cybr-btn__tag {
     position: absolute;
-    padding: 1px 4px;
+    padding: 0px 0px;
     letter-spacing: 1px;
     line-height: 1;
     bottom: -5%;
