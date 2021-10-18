@@ -8,13 +8,14 @@ header {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     font-variant: small-caps;
 }
-textarea {
+input {
     border-radius: 15px;
     margin-left: 50px;
     background-color: #F5F5F5FF;
     border: 0px;
     padding: 10px 14px;
     font-size: 17px;
+    width: 320px;
 }
 .centerWord {
     font-size: 30px;
