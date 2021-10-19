@@ -1,0 +1,234 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/res/TESLA.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+li {
+    cursor: pointer;
+    margin: 10px 4px;
+    padding: 0px 10px;
+}
+header {
+    background-color: rgba(1, 1, 1, 0);
+    display: flex;
+    position: fixed;
+    animation-duration: 1s;
+    animation-name: headerAnimation;
+    z-index: 1;
+    position: absolute;
+}
+
+
+@keyframes headerAnimation {
+    from {
+        margin-top: -30px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+.spacingDivHeader {
+    display: flex;
+    margin-left: 140px;
+}
+
+
+li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 5px #52ADBDFF, 0 0 10px #52ADBDFF, 0 0 15px #52ADBDFF, 0 0 10px #52ADBDFF, 0 0 15px #52ADBDFF;
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(73, 202, 224),
+        0 0 82px rgb(73, 202, 224),
+        0 0 92px rgb(73, 202, 224),
+        0 0 102px rgb(73, 202, 224),
+        0 0 151px rgb(73, 202, 224);
+    }  
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+li a:hover{
+    text-decoration: none;
+    animation: flicker 0.4s;
+    color: #fff;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+.titleWord {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.div1 {
+    background-image: url(CyberTrack.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.caption {
+    position: relative;
+    left: 0;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.neon {
+    font-family: Iceland;
+    text-align: center;
+    font-size: 7em;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1;
+    text-decoration: none;
+    color: #fff;
+    animation: neon 0.4s ease-in-out infinite alternate;
+}
+.neonD {
+    animation: flicker linear infinite 1s;
+}
+@keyframes flicker {
+    75% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    76% {
+      color: #222;
+    }
+    77% {
+      color: inherit;
+      text-shadow: none;
+    }
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79% {
+      color: #222;
+      text-shadow: none;
+    }
+    80% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    90% {
+      color: #222;
+      text-shadow: none;
+    }
+    90.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+
+
+@keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(73, 202, 224),
+        0 0 70px rgb(73, 202, 224), 0 0 80px rgb(73, 202, 224), 0 0 100px rgb(73, 202, 224), 0 0 150px rgb(73, 202, 224);
+    }
+
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(73, 202, 224),
+        0 0 35px rgb(73, 202, 224), 0 0 40px rgb(73, 202, 224), 0 0 50px rgb(73, 202, 224), 0 0 75px rgb(73, 202, 224);
+    }
+}
+
+body, html {
+    height: 100%;
+    background-color: black;
+}
+.div2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+}
+.order {
+    margin-top: 370px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px 50px;
+    font-family: myFirstFont;
+    border: white solid 1px;
+}
+.order:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(73, 202, 224),
+    0 0 70px rgb(73, 202, 224), 0 0 80px rgb(73, 202, 224), 0 0 100px rgb(73, 202, 224), 0 0 150px rgb(73, 202, 224);
+}
+
+.imageQ1 {
+    filter: brightness(0.7);
+}
+.imageQ2 {
+    filter: brightness(0.3);
+}
+.cardS {
+    margin: 0px 10px;
+    background-color: black;
+    text-align: center;
+}
+.desc {
+    text-align: center;
+    color: white;
+}
+.w {
+    padding: 30px;
+    color: white;
+}
+.div3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    padding: 0px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.end {
+    margin-top: 20%;
+    background-image: url(End.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+}

@@ -2,7 +2,10 @@
     font-family: myFirstFont;
     src: url(res/TESLA.ttf);
 }
-  
+@font-face {
+    font-family: Japane;
+    src: url(/JapanStyle.otf);
+}
 
 
 * {
@@ -77,11 +80,13 @@ body {
     background-size: cover;
 }
 .mainDiv {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .mainWord {
-    padding-left: 670px;
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding-left: 600px;
+    font-size: 70px;
+    color: #A60425FF;
+    font-family: Japane;
     animation-duration: 1s;
     animation-name: WordAppearing;
 }
@@ -90,7 +95,7 @@ body {
         padding-left: 1000px;
     }
     to {
-        padding-left: 670px;
+        padding-left: 600px;
     }
 }
 .link {
