@@ -191,6 +191,12 @@ body, html {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(73, 202, 224),
     0 0 70px rgb(73, 202, 224), 0 0 80px rgb(73, 202, 224), 0 0 100px rgb(73, 202, 224), 0 0 150px rgb(73, 202, 224);
 }
+.order:active {
+    background-color:white;
+    color: black;
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(42, 128, 143),
+    0 0 70px rgb(42, 128, 143), 0 0 80px rgb(42, 128, 143), 0 0 100px rgb(42, 128, 143);
+}
 
 .imageQ1 {
     filter: brightness(0.7);
@@ -231,4 +237,8 @@ body, html {
     background-size: cover;
     height: 100%;
     display: flex;
+}
+.blackBorder {
+    border: 0px;
+    background-color: black;
 }

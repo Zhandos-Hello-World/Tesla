@@ -1,93 +1,95 @@
-ul {
-    list-style: none;
-    display: flex;
+@font-face {
+    font-family: iconT;
+    src: url(/res/TESLA.ttf);
 }
-h2 {
-    margin-top: 10px;
+@font-face {
+    font-family: text1;
+    src: url(/Gotham-Font/Gotham-Bold.otf);
 }
-li {
-    cursor: pointer;
-    margin: 20px 10px;
-    padding: 0px 10px;
+.word {
+    font-family: text1;
 }
-header {
-    background-color: #A60425FF;
-    color: white;
-    display: flex;
-    position: fixed;
-    animation-duration: 1s;
-    animation-name: headerAnimation;
-    width: 100%;
-    height: 10%;
-    top: 0px;
-    left: 0px;
-}
-li {
-    color: black;
-}
-li:hover {
-    color: white;
+.word:hover {
+    color: gray;
 }
 
-li a{
-    text-decoration: none;
-    color: black;
-}
-li a:hover{
-    text-decoration: none;
-    color: white;
+* {
+    margin: 0px;
+    padding: 0px;
+    z-index: 0;
 }
 .mainIcon {
-    display: flex;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: iconT;
+    font-variant: small-caps;
 }
 .mainIcon a{
     text-decoration: none;
     color: black;
 }
-.shopP {
-    margin-top: 30px;
-}
-.spacingDivHeader {
-    margin-left: 280px;
-}
-.divStart {
-    margin-top: 100px;
-}
-.sizeDefault {
-    height: 350px;
-    width: 350px;
-}
-.divViewStyle {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px;
-}
-.divViewStyle:hover{
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-p {
-    font-family: cursive;
-    font-size: 30px;
-}
-button {
-    background: white;
-    border: 1px #A60425FF solid;
+.mainIcon a:hover {
     color: #A60425FF;
-    padding: 4px 70px;
-    border-radius: 5px;
 }
-button:hover {
-    background: black;
-    border: 0px;
+
+.div1 {
+    background-image: url(Photo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.caption {
+    position: relative;
+    left: 0;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.div2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 1400px;
+}
+
+
+
+body, html {
+    height: 100%;
+}
+.btn {
+    border: 1px black solid;
+    background-color: white;
+    color:black;
+}
+.btn:hover {
+    border: 1px white solid;
+    background-color: black;
     color: white;
 }
-footer {
-    text-align: center;
-    margin-top: 100px;
+.titleWord {
+    color: white;
 }
-h3 {
-    font-size: 14px;
+
+
+.desc {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.p {
+    margin: 20px;
+}
+.caption2 {
+    position: relative;
+    left: 0;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
