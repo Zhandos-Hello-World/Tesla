@@ -1,10 +1,10 @@
 @font-face {
     font-family: myFirstFont;
-    src: url(res/TESLA.ttf);
+    src: url(TESLA.ttf);
 }
 @font-face {
     font-family: Japane;
-    src: url(/JapanStyle.otf);
+    src: url(JapanStyle.otf);
 }
 
 
@@ -25,6 +25,12 @@ li {
     margin: 20px 10px;
     padding: 0px 10px;
 }
+.c {
+    background-color: aqua;
+}
+.c:hover {
+    color: yellow;
+}
 header {
     background-color: rgba(1, 1, 1, 0);
     display: flex;
@@ -32,12 +38,21 @@ header {
     animation-duration: 1s;
     animation-name: headerAnimation;
 }
+
+@media screen and (max-width: 200px)  {
+    header {
+        
+    }
+}
+
+
+
 @keyframes headerAnimation {
     from {
-        margin-top: -30px;
+        margin-top: -5%;
     }
     to {
-        margin-top: 0px;
+        margin-top: 0%;
     }
 }
 
@@ -76,7 +91,7 @@ li a:hover{
 }
 
 body {
-    background-image: url("res/Roadster.jpg");
+    background-image: url("Roadster.jpg");
     background-size: cover;
 }
 .mainDiv {
