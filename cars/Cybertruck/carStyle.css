@@ -9,10 +9,11 @@
 header {
     background-color: rgba(1, 1, 1, 0);
     display: flex;
+    width: 100%;
     animation-duration: 1s;
     animation-name: headerAnimation;
     z-index: 1;
-    position: absolute;
+    position: relative;
 }
 @keyframes headerAnimation {
     from {
@@ -22,8 +23,6 @@ header {
         margin-top: 0px;
     }
 }
-
-
 div a{
     text-decoration: none;
     font-size: 16px;
@@ -59,7 +58,7 @@ div a:hover{
 }
 
 .neon {
-    font-family: cyberpunk;
+    font-family: cyberpunk, serif;
     text-align: center;
     font-size: 7em;
     margin-bottom: 0;
@@ -135,7 +134,7 @@ body, html {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     padding: 10px 50px;
-    font-family: myFirstFont;
+    font-family: myFirstFont, serif;
     border: white solid 1px;
     transition: 1s;
 
@@ -249,10 +248,11 @@ body, html {
     border-radius:.25rem;
     margin: 0 10px;
     background-color: black;
-    text-align: center;}
+    text-align: center;
+}
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .partHeader {
         display: none;
     }
@@ -261,13 +261,16 @@ body, html {
         height: 50%;
     }
     .imageQ1 {
-        width: 30%;
+        width: 40%;
+        height: auto;
     }
     .imageQ2 {
-        width: 30%;
+        width: 40%;
+        height: auto;
     }
     .imageQ3 {
         width: 100%;
+        height: auto;
     }
     .cardS {
         flex-direction: row;
@@ -278,11 +281,8 @@ body, html {
     .end {
         margin-top: 3%;
     }
-}
-
-@media (max-width: 950px) {
-    .neon {
-        font-size: 6em;
+    .video2 {
+        display: none;
     }
     .order {
         margin-top: 200px;
@@ -292,19 +292,84 @@ body, html {
     }
 }
 
+@media (max-width: 950px) {
+    .neon {
+        font-size: 6em;
+    }
+
+}
+
 @media (max-width: 700px) {
     .neon {
         font-size: 4em;
     }
+
+}
+
+#menu {
+    position: fixed;
+    float: right;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+    width: 15%;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 14px;
+    font-family: Cyber, serif, serif;
+}
+.nav {
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    cursor: pointer;
+    text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 5px #52ADBDFF, 0 0 10px #52ADBDFF, 0 0 15px #52ADBDFF, 0 0 10px #52ADBDFF, 0 0 15px #52ADBDFF;
+    color: white;
+}
+.nav:hover {
+    transition: 2s;
+    text-shadow: 0 0 15px #fff, 0 0 10px #fff, 0 0 15px #52ADBDFF, 0 0 25px #52ADBDFF, 0 0 35px #52ADBDFF, 0 0 30px #52ADBDFF, 0 0 35px #52ADBDFF;
+}
+#menu ul {
+    margin-bottom: 30px;
+}
+#menu ul li {
+    margin-top: 5px;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#menu ul li:hover {
+    border-radius: 15px;
+    background-color: #D6D6D6;
+}
+#toggle {
+    display: none;
+}
+#toggle:checked + #menu{
+    display: none;
 }
 
 
+#toggle2 {
+    display: none;
+}
+#toggle2:checked + #menu {
+    display: flex;
+}
 
-
-
-
-
-
+.nav2 {
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 5px #52ADBDFF, 0 0 10px #52ADBDFF, 0 0 15px #52ADBDFF, 0 0 10px #52ADBDFF, 0 0 15px #52ADBDFF;
+    color: white;
+}
+.nav2:hover {
+    transition: 2s;
+    text-shadow: 0 0 15px #fff, 0 0 10px #fff, 0 0 15px #52ADBDFF, 0 0 25px #52ADBDFF, 0 0 35px #52ADBDFF, 0 0 30px #52ADBDFF, 0 0 35px #52ADBDFF;
+}
 
 
 
