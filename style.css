@@ -7,7 +7,9 @@
     src: url(JapanStyle.otf);
 }
 
-
+.burger{
+     list-style: none;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -31,19 +33,20 @@ li {
 .c:hover {
     color: yellow;
 }
-header {
+
+.header {
     background-color: rgba(1, 1, 1, 0);
     display: flex;
-    position: fixed;
+    /*position: fixed;*/
     animation-duration: 1s;
-    animation-name: headerAnimation;
+   /* animation-name: headerAnimation;*/
 }
 
-@media screen and (max-width: 200px)  {
+/*@media screen and (max-width: 200px)  {
     header {
         
     }
-}
+}*/
 
 
 
@@ -56,9 +59,16 @@ header {
     }
 }
 
-.spacingDivHeader {
+/*.spacingDivHeader {
     display: flex;
     margin-left: 170px;
+}*/
+div.burger a:hover{
+    color: #A60425FF;
+    border: 1px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(130, 130, 130, 0.5);
 }
 li:hover {
     color: #A60425FF;
@@ -69,14 +79,20 @@ li:hover {
 
 
 .mainIcon {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
     font-family: myFirstFont;
     font-variant: small-caps;
+}
+.mainIcon h1{
+    margin: 0px;
+    padding: 0px;
 }
 .mainIcon a{
     text-decoration: none;
     color: black;
+    margin-top: 0;
+    padding-top: 0; 
 }
 .mainIcon a:hover {
     color: #A60425FF;
@@ -91,32 +107,41 @@ li a:hover{
 }
 
 body {
+    background-color: #bfc6c7;
+
+}
+.containe{
     background-image: url("Roadster.jpg");
     background-size: cover;
+    background-position: center;
+    height: 1000px;
+    text-align: center;
 }
 .mainDiv {
     padding-top: 100px;
 }
 .mainWord {
-    padding-left: 600px;
+   /* padding-left: 600px;*/
     font-size: 70px;
     color: #A60425FF;
     font-family: Japane;
     animation-duration: 1s;
     animation-name: WordAppearing;
+    text-align: center;
 }
 @keyframes WordAppearing {
     from {
-        padding-left: 1000px;
+        padding-left: 50px;
     }
     to {
-        padding-left: 600px;
+        padding-left: 100px;
     }
 }
 .link {
-    padding-left: 710px;
+   /* padding-left: 710px;*/
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     animation-duration: 1s;
+    text-align: center;
     animation-name: linkAppearing;
 }
 a {
@@ -124,34 +149,35 @@ a {
 }
 @keyframes linkAppearing {
     from {
-        padding-left: 1000px;
+        padding-left: 50px;
     }
     to {
-        padding-left: 710px;
+        padding-left: 40px;
     }
 }
 
 
-.btnDiv {
+/*.btnDiv {
     position: absolute;
     top: 600px;
     left: 500px;
     animation-duration: 1s;
     animation-name: btnDiv;
-}
-@keyframes btnDiv {
+}*/
+/*@keyframes btnDiv {
     from {
         top: 650px;
     }
     to {
         top: 600px;
     }
-}
+}*/
 
 
 .btnBlack {
+    display: block;
     padding: 9px 60px;
-    margin: 0px 20px;
+    margin: auto;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -168,9 +194,15 @@ a {
 .btnBlack:active{
     background-color: gray;
 }
+.btn2{
+    margin-top: 20px;
+}
 
 .btnWhite {
-    padding: 9px 60px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    display: block;
     background-color: rgba(255, 255, 255, 0.7);
     color: #302F28FF;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -192,7 +224,7 @@ a {
 }
 
 
-i {
+/*i{
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -200,8 +232,8 @@ i {
     margin-left: 750px;
     margin-top: 410px;
     animation: down 3s infinite;
-}
-@keyframes down {
+}*/
+/*@keyframes down {
     from {
         margin-top: 410px;
     }
@@ -211,10 +243,47 @@ i {
     to {
         margin-top: 410px;
     }
-}
+}*/
 
 
-.down {
+/*.down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}*/
+.buter{
+  float: left;
+  padding-bottom: 5rem;
+}
+label{
+  margin: 8px 0 0 20px;
+  font-size: 30px;
+  display: none;
+}
+#toggle{
+  display: none;
+}
+@media (max-width: 700px){
+    .containe{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    /*.mainWord{
+        font-size: 150px;
+    }*/
+    label{
+    display: block;
+    cursor: pointer;
+  }
+  #toggle:checked + .header{
+    display: none;
+  }
+  .burger a{
+    font-size: 25px;
+  }
+  .burger .mainIcon a{
+    font-size: 50px;
+  }
+
 }
