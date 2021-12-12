@@ -204,8 +204,9 @@ body, html {
 
 .partHeader {
     display: flex;
-    margin-top: 10px;
-    margin-left: 12rem;
+    font-size: 100%;
+    margin-top: 1%;
+    margin-left: 10%;
 }
 .subHeader {
     margin: 0 0.6rem;
@@ -267,6 +268,10 @@ body, html {
     .imageQ2 {
         width: 40%;
         height: auto;
+    }
+    #TeslaBtn {
+        width: 120%;
+        height: 120%;
     }
     .imageQ3 {
         width: 100%;
@@ -383,7 +388,10 @@ body, html {
     src: url(res/TESLA.ttf);
     font-display: swap;
 }
-
+#TeslaBtn {
+    height: 130%;
+    font-size: 200%;
+}
 
 .cybr-btn {
     --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 0.8%));
