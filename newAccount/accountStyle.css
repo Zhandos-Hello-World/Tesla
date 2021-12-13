@@ -6,35 +6,23 @@
 
 header {
     letter-spacing: 1px;
-    height: 5em;
-    padding: 0.3em 5%;
+    height: 14%;
+    padding: 1% 5%;
     display: flex;
 }
 * {
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     font-variant: small-caps;
 }
-input {
-    border-radius: 15px;
-    width: 40%;
-    padding: 5px;
-    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-    color: black;
-    margin: 5%;
-    background-color: #F5F5F5FF;
-    border: 0;
-    font-size: 14px;
-}
-.centerWord {
-    font-size: 30px;
-    margin-left: 50px;
-}
+
 
 p {
-    font-size: 13px;
+    font-size: 100%;
     font-weight: bolder;
     margin-left: 10px;
     color: #66676AFF;
+}
+h1 {
+    font-family: tesla, serif;
 }
 button a {
     text-decoration: none;
@@ -50,7 +38,7 @@ button a:hover {
     border-radius: 15px;
     border: 1px gray dotted;
     height: 80%;
-    width: 120px;
+    width: 10%;
     background-color: white;
 }
 #btnEn-Kz:hover {
@@ -68,42 +56,26 @@ h1 a:hover{
 }
 
 .mainDiv {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 25%;
     border: 1px solid black;
-    border-radius: 15px;
-    text-align: center;
+    border-radius: 10px;
+    padding: 5%;
     transition: all .5s;
-}
-
-#canc {
-    border: 0px solid black;
-    border-radius: 15px;
-    padding: 10px;
-    margin-left: 3rem;
-    margin-top: 2rem;
-}
-#canc:hover{
-    background-color: #D9D9D9FF;
-}
-.question{
-    margin-left: 5rem;
-    margin-top: 2rem;
-    width: 20rem;
-}
-footer {
-    margin: 16px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12px;
-}
-button {
-    font-size: 16px;
-    padding: 5px 0;
-}
-p {
-    margin-left: 50px;
-}
-.subDiv {
     display: flex;
 }
+
+footer {
+    margin: 10%;
+    text-align: center;
+    font-size: 5%;
+}
+
+@media (max-width: 600px) {
+    .mainDiv {
+        padding: 0;
+        border: 0;
+    }
+}
+
+
