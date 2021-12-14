@@ -48,7 +48,7 @@ button a:hover {
 h1 a{
     text-decoration: none;
     color: black;
-    font-family: tesla;
+    font-family: tesla, serif;
 }
 h1 a:hover{
     text-decoration: none;
@@ -56,13 +56,16 @@ h1 a:hover{
 }
 
 .mainDiv {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 5%;
     transition: all .5s;
     display: flex;
+}
+.firstDiv {
+    justify-content: space-around;
+
 }
 
 footer {
@@ -70,12 +73,31 @@ footer {
     text-align: center;
     font-size: 5%;
 }
+.imageSize {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.image {
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+@media (max-width: 1000px) {
+    .image {
+        display: none;
+    }
+}
+
 
 @media (max-width: 600px) {
     .mainDiv {
         padding: 0;
         border: 0;
     }
+
 }
 
 
