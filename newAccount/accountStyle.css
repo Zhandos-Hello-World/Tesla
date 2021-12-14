@@ -1,8 +1,7 @@
 @font-face {
     font-family: tesla;
-    src: url(/TESLA.ttf);
+    src: url(TESLA.ttf);
 }
-
 
 header {
     letter-spacing: 1px;
@@ -13,7 +12,9 @@ header {
 * {
     font-variant: small-caps;
 }
-
+.mainIcon a {
+    color: white;
+}
 
 p {
     font-size: 100%;
@@ -23,6 +24,8 @@ p {
 }
 h1 {
     font-family: tesla, serif;
+    color: #A60425FF;
+
 }
 button a {
     text-decoration: none;
@@ -30,6 +33,10 @@ button a {
 }
 button a:hover {
     text-decoration: none;
+}
+body {
+    background: url("space-wallpaper-200707154305521920x1200.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 #btnEn-Kz {
@@ -58,11 +65,26 @@ h1 a:hover{
 .mainDiv {
     margin-left: 15%;
     margin-right: 15%;
+    padding: 7%;
     border: 1px solid black;
     border-radius: 10px;
     transition: all .5s;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: appear 1.4s;
 }
+@keyframes appear {
+    from {
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    to {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+
 .firstDiv {
     justify-content: space-around;
 
@@ -74,11 +96,12 @@ footer {
     font-size: 5%;
 }
 .imageSize {
-
+    border-radius: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    filter: brightness(0.6);
 }
 .image {
     justify-content: space-around;
@@ -96,6 +119,15 @@ footer {
     .mainDiv {
         padding: 0;
         border: 0;
+        animation: none;
+        background-color: white;
+    }
+    .mainIcon a {
+        color: black;
+    }
+    body {
+        background-color: white;
+        background-image: none;
     }
 
 }
