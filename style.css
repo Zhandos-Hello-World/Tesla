@@ -15,7 +15,7 @@
     padding: 0px;
 }
 a {
-    color: black;
+    /*color: black;*/
     text-decoration: none;
 }
 ul {
@@ -97,14 +97,6 @@ li:hover {
 .mainIcon a:hover {
     color: #A60425FF;
 }
-li a{
-    text-decoration: none;
-    color: black;
-}
-li a:hover{
-    text-decoration: none;
-    color: #A60425FF;
-}
 
 body {
     background-color: #bfc6c7;
@@ -145,7 +137,8 @@ body {
     animation-name: linkAppearing;
 }
 a {
-    color: black;
+
+    color: #000000;
 }
 @keyframes linkAppearing {
     from {
@@ -193,6 +186,7 @@ a {
 }
 .btnBlack:active{
     background-color: gray;
+
 }
 .btn2{
     margin-top: 20px;
@@ -244,7 +238,13 @@ a {
         margin-top: 410px;
     }
 }*/
-
+.btn1{
+    margin: auto;
+    margin-bottom: 15px;
+}
+.btn2{
+    margin: auto;
+}
 
 /*.down {
     transform: rotate(45deg);
@@ -255,7 +255,8 @@ a {
   padding-bottom: 5rem;
 }
 label{
-  margin: 8px 0 0 20px;
+    /*display: contents;*/
+  margin: 8px 0 0 0px;
   font-size: 30px;
   display: none;
 }
@@ -263,6 +264,9 @@ label{
   display: none;
 }
 @media (max-width: 760px){
+    .arrow{
+        display: none;
+    }
     .containe{
         background-size: cover;
         background-position: center;
@@ -273,11 +277,18 @@ label{
         font-size: 150px;
     }*/
     label{
-    display: block;
+    display: contents;
     cursor: pointer;
   }
   #toggle:checked + .header{
     display: none;
+  }
+  .header {
+
+    z-index: 1;
+  }
+  .buter label{
+    z-index: 2;
   }
   .burger a{
     font-size: 25px;
@@ -285,5 +296,30 @@ label{
   .burger .mainIcon a{
     font-size: 50px;
   }
+    .mainDiv .mainWord{
+        font-size: 11vw;
+    }
+    .btn1{
+        width: 60%;
+    }
+    .btn2{
+        width: 60%;
+    }
+}
+@media (max-width: 360px){
+    .mainDiv .mainWord{
+        font-size: 10vw;
+    }
+    .btn1{
+        width: 100px;
+    }
 
+}
+@media (max-width: 250px){
+    .mainDiv .mainWord{
+        font-size: 9vw;
+    }
+    .btn1{
+        width: 10px;
+    }
 }
