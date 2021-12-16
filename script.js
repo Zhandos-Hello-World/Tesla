@@ -11,6 +11,7 @@ function change(element){
             document.getElementById('bg').style.cssText = 'background-image: url("Roadster.jpg");';
             document.getElementById("mainWord").innerHTML = "Roadster";
             document.getElementById("mainWord").style.cssText = 'font-family: Japane; color:#A60425FF';
+            document.getElementById("roadster").style.cssText = 'display: block';
             break;
         case 1:
             document.getElementById('bg').style.cssText = 'background-image: url("model-s.png");';
@@ -19,6 +20,7 @@ function change(element){
             for(j = 0; j < document.getElementsByClassName("a").length; j++)
                 document.getElementsByClassName("a")[j].style.cssText = 'color: black';
 
+            document.getElementById("roadster").style.cssText = 'display: none';
             break;
         case 2:
             document.getElementById('bg').style.cssText = 'background-image: url("model-3.jpeg"); color: white; ';
