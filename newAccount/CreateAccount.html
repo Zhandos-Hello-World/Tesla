@@ -19,8 +19,8 @@
         <div class="firstDiv">
             <h1>Create your Tesla Account</h1>
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="First Name" aria-label="Username">
-                <input type="text" class="form-control" placeholder="Last Name" aria-label="Server">
+                <input id="first_name" type="text" class="form-control" placeholder="First Name" aria-label="Username">
+                <input id="last_name" type="text" class="form-control" placeholder="Last Name" aria-label="Server">
             </div>
 
             <div class="input-group mb-3 d-flex">
@@ -30,12 +30,15 @@
             <p>You can use letters, numbers & periods</p>
 
             <div class="input-group mb-3">
-                <input type="password" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <input type="password" class="form-control" placeholder="Confirm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input id="password2" type="password" class="form-control" placeholder="Confirm" aria-label="Recipient's username" aria-describedby="basic-addon2">
             </div>
 
-            <button type="button" class="btn btn-outline-danger">Cancel</button>
-            <button type="button" class="btn btn-outline-success">Register</button>
+            <div class="">
+
+            </div>
+            <form action="/account/account.html"><button type="button" class="btn btn-outline-danger" >Cancel</button></form>
+            <button onclick="result(this)" type="button" class="btn btn-outline-success">Register</button>
         </div>
 
         <div class="image">
