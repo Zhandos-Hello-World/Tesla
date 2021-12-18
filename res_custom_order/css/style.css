@@ -1,0 +1,122 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/TESLA.ttf);
+}
+.carusel{
+    width: 950px;
+    text-align: center;
+
+}
+.mid{
+    text-align: center;
+}
+*{
+    font-variant: small-caps;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-family: myFirstFont;
+    padding-left: 10px;
+
+}
+#zatemnenie {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+#okno {
+    z-index: 2;
+    width: 450px;
+    height: 320px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    color: gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
+#zatemnenie:target {display: block;}
+.close {
+    display: inline-block;
+    border: 1px solid gray;
+    color: black;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 14pt;
+    cursor:pointer;
+}
+.close:hover {background: #e6e6ff;}
+.btn{
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.arrow-right{
+    /*padding-top: 317px;
+    margin-right:10px;*/
+    padding-top: 315px;
+   margin-bottom: 0px;
+    position: relative;
+    width: 50px;
+    cursor: pointer;
+    float: right;
+}
+.arrow-left{
+    padding-bottom: 170px;
+    position: relative;
+    width: 50px;
+    transform: rotate(180deg);
+    cursor: pointer;
+    float: left;
+    margin-top: 150px;
+}
+@media (max-width: 760px) {
+    .carusel{
+        width: 500px;
+    }
+    .arrow-right{
+        position: absolute;
+        float: left;
+        margin-right: 190px;
+    }
+    .arrow-left{
+        position: absolute;
+        float: left;
+        margin-rig: 190px;
+    }
+
+}
+@media (max-width: 450px) {
+    *{
+        text-align: center;
+    }
+    .carusel{
+        width: 200px;
+    }
+    .arrow-right{
+        position: absolute;
+        float: left;
+        padding: 0;
+        margin: 0;
+
+    }
+    .arrow-left{
+        position: absolute;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+}

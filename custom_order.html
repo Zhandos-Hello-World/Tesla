@@ -2,9 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="res_custom_order/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="containter">
+        <div class="row">
+            <div class="col-md-2 burger">
+                <div class="mainIcon">
+                    <h1><a class="a" href="main.html">Tesla</a></h1>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="row">
+                <div class="col-md-1"> <img class="arrow-left" onclick="change('-')"  src="res_main/img/next.png" alt="">
+                </div>
+                <div class="col-md-7">
+                   <img class="carusel" src="https://static-assets.tesla.com/configurator/compositor?&options=$MT324,$PBSB,$W40B,$IPB1&view=STUD_FRONT34&model=m3&size=1920&bkba_opt=2&version=v0028d202112160416&crop=0,0,0,0&version=v0028d202112160416" alt="">
+                    </div>
+                <div class="col-md-1"><img class="arrow-right" onclick="change('+')" src="res_main/img/next.png" alt="">
+                </div>
+                <div class="col-md-3 justify-content-center">
+                    <h2 id="name">Model S</h2>
+                    <p>Est. Delivery: July 2022</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 id="range"><span class="count">375</span>km</h4>
+                            <p>Range (est.)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 id="top_speed"><span class="count">155</span>km/h</h4>
+                            <p>Top Speed</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 id="sixty">3.1sec</h4>
+                            <p>0-60 mph</p>
+                        </div>
+                    </div>
+                    <p>Dual Motor All-Wheel Drive</p>
+                    <div class="border">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 id="name1">Model S</h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5  id="price">$ <span class="count">87510</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Tri Motor All-Wheel Drive</p>
+                    <div class="border">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 id="name1Plaid">Model S Plaid</h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 id="price_plaid">$ <span class="count">127510</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Plaid Upgrades</h3>
+                    <ul style="text-align: left">
+                        <li>Quickest accelerating car in production today</li>
+                        <li>0-60 mph: 1.99s</li>
+                        <li>1/4 mile: 9.23@155 mph trap speed</li>
+                        <li>1,020 horsepower</li>
+                        <li>Three high performance motors with carbon-sleeved rotors</li>
+                        <li>Torque vectoring</li>
+                    </ul>
+                    <a href="#zatemnenie"><button type="button" class="btn btn-secondary">Order now</button></a>
+                </div>
+                <div id="zatemnenie">
+                    <div id="okno">
+                        <h2>Request for assıstant</h2>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Surname Firstname" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Имя пользователя получателя" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Phone number" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                        </div>
+
+
+
+                        <br>
+                        <a href="#" class="close">Sumbit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="res_custom_order/js/script.js">
+
+    </script>
 
 </body>
 </html>
