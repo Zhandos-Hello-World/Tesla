@@ -34,7 +34,13 @@ li {
 .c:hover {
     color: yellow;
 }
-
+.roadster-car{
+    color: #bb0023;
+    border: 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: rgba(130, 130, 130, 0.4);
+}
 .header {
     background-color: rgba(1, 1, 1, 0);
     display: flex;
