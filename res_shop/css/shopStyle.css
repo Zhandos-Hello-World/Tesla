@@ -1,6 +1,6 @@
 @font-face {
     font-family: iconT;
-    src: url(/res_main/fonts/TESLA.ttf);
+    src: url(/TESLA.ttf);
 }
 @font-face {
     font-family: text1;
@@ -33,7 +33,7 @@
 }
 
 .div1 {
-    background-image: url(Photo1.jpg);
+    background-image: url(/res_shop/img/Photo1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
