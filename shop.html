@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
@@ -9,98 +10,347 @@
     <title>Tesla shop</title>
     <link rel="shortcut icon" href="/tesla_logo_icon_169601.ico">
     <link rel="stylesheet" href="res_shop/css/shopStyle.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" id="myHeader">
             <div>
                 <h1 class="mainIcon"><a href="/main.html">Tesla</a></h1>
             </div>
     
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary word">Charging</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark word">Vehicle Accessories</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark word">Apparel</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark word">Lifestyle</a></li>
-          </ul>
     
           <div class="col-md-3 text-end">
             <button type="button" class="btn btn-outline-primary me-2 btn">Login</button>
             <button type="button" class="btn btn-primary btn">Sign-up</button>
           </div>
         </header>
-      </div>  
-      <div class="div1">
-        <div class="caption">
-          <h1 class="titleWord">Wall connector</h1>
-          <h1 class="titleWord">The fastest way to charge at home</h1>
-        </div>
       </div>
-      <div class="div2">
-        <div class="caption2">
-          <div class="container">
-            <div class="row">
-              <div class="card col p" style="width: 18rem;">
-                <img src="https://cdn.shopify.com/s/files/1/1288/8361/files/Tesla_Side.jpg?v=1628021190" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Decanter</h5>
-                        <p class="card-text">Inspired by Tesla Tequila, the Tesla Decanter is the perfect way to add your favorite liquor to this unfilled vessel and will make for a lovely addition to your home bar. With a lightning bolt silhouette, each hand-blown bottle holds up to 750 mL of your favorite spirit.</p>
-                        <a href="#" class="btn btn-primary">Quick add +</a>
-                    </div>
-              </div>
-              <div class="card col p" style="width: 18rem;">
-                <img src="https://m.media-amazon.com/images/I/513WlK8PZ0L._AC_SX425_.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">S3XY Mug</h5>
-                        <p class="card-text">Start your day with our limited edition, all black, 12-oz S3XY Mug, featuring tone-on-tone lettering of our vehicle model names and a smooth matte finish.</p>
-                        <a href="#" class="btn btn-primary">Quick add +</a>
-                    </div>
-              </div>
-              <div class="card col p" style="width: 18rem;">
-                <img src="https://editorial.pxcrush.net/carsales/general/editorial/tesla-model-3-102.jpg?width=1024&height=683" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Diecast 1:18 Scale Model 3</h5>
-                        <p class="card-text">Officially commissioned by Tesla, the Model 3 Performance diecast scale model was meticulously overseen by the Tesla Design Studio. Every detail, curve and surface was replicated from the same 3D CAD data used to manufacture the actual Model 3 Performance.</p>
-                        <a href="#" class="btn btn-primary">Quick add +</a>
-                    </div>
+    <div class="r">
+        <div class="c" id="c1">
+        <div class="b">
+          <a href="#slide1"><img src="res_shop/img/img 2.jpg" alt="Snow" style="width:100%"></a>
+          <div class="text-block">
+            
+            <p>Charging</p>
+          </div>
+        </div>
+        </div>
+        <div class="c" id="c1">
+            <a href="#Apparel"><img src="res_shop/img/img 1.jpg" alt="Forest" style="width:100%"></a>
+            <div class="text-block">
+              
+              <p>Apparel</p>
+            </div>
+        </div>
+        <div class="c" id="c1">
+          <a href="#Accessorise"><img src="res_shop/img/img 3.jpg"Mountains" style="width:100%"></a>
+          <div class="text-block">
+            
+            <p>Accessorise</p>
+          </div>
+          </div>
+      </div>
+     
+      <div class="charging_content" id="slide1">
+        <h1 style="font-family: iconT">Charging at Home</h1>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="bg-white rounded shadow-sm"">
+                <img class="card-img-top" src="res_shop/img/charger1.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Wall Connector Faceplate</h5>
+                  <p class="card-text">100$</p>
+                  <a href="#modal1" class="btn btn-primary">View Details</a>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="card col p" style="width: 18rem;">
-                <img src="https://evchargeplus.com/wp-content/uploads/2020/01/tesla-models-evchargeplus-00.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Diecast 1:18 Scale Model S</h5>
-                        <p class="card-text">The Diecast 1:18 Scale Model S was meticulously overseen directly by the Tesla Design Studio.</p>
-                        <a href="#" class="btn btn-primary">Quick add +</a>
-                    </div>
+            <div class="col">
+              <div class="bg-white rounded shadow-sm"">
+                <img class="card-img-top" src="res_shop/img/charger2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Wall Connector</h5>
+                  <p class="card-text">$550</p>
+                  <a href="#modal2" class="btn btn-primary" >View Details</a>
+                 </div>
+                   
+  
               </div>
-              <div class="card col p" style="width: 18rem;">
-                <img src="https://www.pioneerplastics.com/wp-content/uploads/2013/06/633C-6549.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Diecast 1:24 Scale Semi</h5>
-                        <p class="card-text">The Diecast 1:24 Scale Semi was officially commissioned by Tesla and meticulously overseen by the Tesla Design Studio. The same 3D CAD data used to manufacture the actual Tesla Semi was used to replicate every detail, curve and surface found in the scale model.</p>
-                        <a href="#" class="btn btn-primary">Quick add +</a>
-                    </div>
+            </div>
+            <div class="col">
+              <div class="bg-white rounded shadow-sm"">
+                <img class="card-img-top" src="res_shop/img/charger3.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Wall Connector Pedestal</h5>
+                  <p class="card-text">$425</p>
+                  <a href="#modal3" class="btn btn-primary">View Details</a>
+                </div>
               </div>
-              <div class="card col p" style="width: 18rem;">
-                <img src="https://image.made-in-china.com/202f0j00mcqUHeuPrZkB/Residential-High-Efficiency-Small-Solar-Panel-Tesla-Style-Roof-Tiles-for-Home-Power-System.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">Tesla Solar Panels</h5>
-                        <p class="card-text">Use solar energy to power your home and reduce your dependence on the grid. Purchase solar at the lowest price of any national provider with Tesla's price match guarantee and take control of your monthly electricity bill.</p>
-                        <a href="#" class="btn btn-primary">Quick add +</a>
-                    </div>
+            </div>
+            <div class="col">
+              <div class="bg-white rounded shadow-sm"">
+                <img class="card-img-top" src="res_shop/img/charger4.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Cable Organizer</h5>
+                  <p class="card-text">35$</p>
+                  <a href="#modal4" class="btn btn-primary">View Details</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <footer class="desc">
-        <p>Tesla © 2021
-            Privacy & Legal
-            Contact
-            Careers
-            News
-            Locations</p>
-    </footer>
-</body>
-</html>
+      <div id="modal2">
+        <div class="modal__window2">
+            <a class="modal__close2" href="#">X</a>
+            <div class="content" style="max-width: 1000px; max-height: 600px;">
+              <div class="row item-block">
+                <div class="col-md-4">
+                  
+                  <img src="res_shop/img/modal1.jpg" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+                </div>
+                
+                <div class="col-md-4">
+                  <h3>Wall Connector</h3>
+                  <p>Wall Connector is the most convenient charging solution for houses, apartments, hospitality properties and workplaces.
+
+                    With up to 44 miles of range added per hour of charging, multiple power settings, and a versatile indoor/outdoor design, Wall Connector provides unparalleled convenience. Available in 18 ft (5.5 meter) or 24 ft (7.3 meter) cable lengths.
+                    
+                    Wall Connectors can power-share to maximize existing electrical capacity, automatically distributing power to charge multiple cars simultaneously.</p>
+
+                  </div>
+                  <div class="col-md-4"style="padding:50px 40px">
+                    <h3 id="Currency">Price in USD:<h3 id="p1">550USD</h3></h3>
+                    <div style="padding: 10px 2px; max-width: 300px;">
+                    <button class="btn btn-light" onclick="ChangeCurrencyToKZT2()">Change Currency To KZT</button>
+                    <button class="btn btn-light" onclick="ChangeCurrencyToUSD2()">Change Currency To USD</button>
+                    <button class="btn btn-light" onclick="ChangeCurrencyToEUR2()">Change Currency To EUR</button>
+                  </div>
+                  </div>
+              </div>
+               </div>
+        </div>
+      </div>
+      <div id="modal1">
+        <div class="modal__window1">
+          <a class="modal__close1" href="#">X</a>
+          <div class="content" style="max-width: 1000px; max-height: 600px;">
+            <div class="row item-block">
+              <div class="col-md-4">
+                
+                <img src="res_shop/img/modal2.jpg" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Wall Connector Faceplate</h3>
+                <p>Perfectly pair your Wall Connector to the paint color of your Tesla vehicle with Wall Connector Color Matched Faceplate. Made from the same durable tempered glass as the original design, these faceplates offer a stylish alternative to your Tesla charging setup and easy installation. Available in Midnight Silver Metallic, Deep Blue Metallic, Red Multi-Coat and Solid Black.
+                </p>
+                </div>
+                <div class="col-md-4"style="padding:50px 40px">
+                  <h3 id="Currency2">Price in USD:<h3 id="p2">100USD</h3></h3>
+                  <div style="padding: 10px 2px; max-width: 300px;">
+                  <button class="btn btn-light" onclick="ChangeCurrencyToKZT1()">Change Currency To KZT</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToUSD1()">Change Currency To USD</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToEUR1()">Change Currency To EUR</button>
+                </div>
+                </div>
+            </div>
+             </div>
+      </div>
+      </div>
+      <div id="modal3">
+        <div class="modal__window3">
+          <a class="modal__close3" href="#">X</a>
+          <div class="content" style="max-width: 1000px; max-height: 600px;">
+            <div class="row item-block">
+              <div class="col-md-4">
+                
+                <img src="res_shop/img/modal3.jpg" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Wall Connector Pedestal</h3>
+                <p>The Wall Connector Pedestal is a rugged aluminum post designed for mounting both Gen 3 and Gen 2 Wall Connectors for stand-alone charging. With easy indoor and outdoor installation options, the Wall Connector Pedestal is ideal for any driveway, parking lot or property that requires a free-standing structure to support charging equipment. The Wall Connector Pedestal supports both single and dual mounted configurations for charging one or two Tesla vehicles at the same time.</p>
+                </div>
+                <div class="col-md-4"style="padding:50px 40px">
+                  <h3 id="Currency3">Price in USD:<h3 id="p3">425USD</h3></h3>
+                  <div style="padding: 10px 2px; max-width: 300px;">
+                  <button class="btn btn-light" onclick="ChangeCurrencyToKZT3()">Change Currency To KZT</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToUSD3()">Change Currency To USD</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToEUR3()">Change Currency To EUR</button>
+                </div>
+                </div>
+            </div>
+             </div>
+      </div>
+      </div>
+      <div id="modal4">
+        <div class="modal__window4">
+          <a class="modal__close4" href="#">X</a>
+          <div class="content" style="max-width: 1000px; max-height: 600px;">
+            <div class="row item-block">
+              <div class="col-md-4">
+                
+                <img src="res_shop/img/modal4.jpg" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Cable Organizer</h3>
+                <p>Store your Corded Mobile Connector with the newly redesigned Cable Organizer. This product features a sturdy bracket to keep your cables neatly stowed and a chassis holder to reduce additional wear and tear on your adaptor and outlet.</p>
+
+                </div>
+                <div class="col-md-4"style="padding:50px 40px">
+                  <h3 id="Currency4">Price in USD:<h3 id="p4">35USD</h3></h3>
+                  <div style="padding: 10px 2px; max-width: 300px;">
+                  <button class="btn btn-light" onclick="ChangeCurrencyToKZT4()">Change Currency To KZT</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToUSD4()">Change Currency To USD</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToEUR4()">Change Currency To EUR</button>
+                </div>
+                </div>
+            </div>
+             </div>
+      </div>
+      </div>
+      </div>
+    
+    <div class="Apparel" style="width:100%" id="Apparel" >
+      <h1 style="font-family: iconT">Tesla apparel collections for everyone</h1>
+      <div class="container-fluid">
+        <div class="px-lg-5">
+      
+      
+          <div class="row">
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://ih1.redbubble.net/image.2758819563.9016/ssrco,classic_tee,mens,101010:01c5ca27c6,front_alt,square_product,600x600.jpg" alt="" class="img-fluid card-img-top" style="max-width:400px;object-fit: cover;" >
+                <div class="p-4">
+                  <h5>Men's Solar Roof Tee</h5>
+                  <p class="small text-muted mb-0">$35</p>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://cdn.shopify.com/s/files/1/0293/9277/products/09-19-19_Studio_3_JP_LE_11-35-33_6__JU785_Black_0615_JD_468x.jpg?v=1571441687" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;">
+                <div class="p-4">
+                  <h5>Chill Pullover Hoodie</h5>
+                  <p class="small text-muted mb-0">$90</p>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://cdn.shopify.com/s/files/1/2345/6031/products/cyber_5_1024x1024@2x.jpg?v=1575310189" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;">
+                <div class="p-4">
+                  <h5>Men's Cybertruck Owl Tee</h5>
+                  <p class="small text-muted mb-0">$35</p>
+                 
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://tshirtclassic.com/wp-content/uploads/2020/01/Tesla-Cybertruck-Bulletproof-LongSleeve.png" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;">
+                <div class="p-4">
+                  <h5>Cybertruck Bulletproof Tee</h5>
+                  <p class="small text-muted mb-0">$30</p>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+           
+      
+     </div>
+     </div>
+     </div>
+     </div>
+     <div class="Accessorise" style="width:100%" id="Accessorise" >
+      <h1 style="font-family: iconT"></h1>
+      <div class="container-fluid">
+        <h1 style="font-family: iconT;">Accessories for your Tesla</h1>
+        <div class="px-lg-5">
+      
+      
+          <div class="row">
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://images-na.ssl-images-amazon.com/images/I/51+yjD8lP0L.jpg" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;"> <div class="p-4">
+                  <h5>Model S All-Weather Interior Mats</h5>
+                  <p class="small text-muted mb-0">$180</p>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://www.tesla.com/ns_videos/commerce/content/dam/tesla/CAR_ACCESSORIES/MODEL_Y/EXTERIOR/1518236-00-A_0.jpg" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;">
+                <div class="p-4">
+                  <h5>Model S Roof Rack - Glass Roof</h5>
+                  <p class="small text-muted mb-0">$450</p>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://external-preview.redd.it/yMNvk5-KrA1WnYQlohvwm8wARGcrFNxG0irDzUN_Y5Q.jpg?width=640&crop=smart&auto=webp&s=4119f9bd6d7a656f31a9a3ee014c682c446e9872" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;">
+                <div class="p-4">
+                  <h5>Model S Rear Liftgate Sunshade</h5>
+                  <p class="small text-muted mb-0">$80</p>
+                 
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+            <!-- Gallery item -->
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+              <div class="bg-white rounded shadow-sm"><img src="https://www.teslarati.com/wp-content/uploads/2019/11/tesla-gemini-wheels.jpg" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;">
+                <div class="p-4">
+                  <h5>Model S 19" Tempest Wheel and Winter Tire Package</h5>
+                  <p class="small text-muted mb-0">$2,750</p>
+                </div>
+              </div>
+            </div>
+            <!-- End -->
+      
+           
+      
+     </div>
+     </div>
+     </div>
+     </div>
+     <footer class="desc">
+      <p>Tesla © 2021
+          Privacy & Legal
+          Contact
+          Careers
+          News
+          Locations</p>
+  </footer>
+  <script type="text/javascript" src="res_shop/js/script.js"></script>
+  </body>
+  </html>
+     <script type="text/javascript" src="script.js"></script>
+  
+     
