@@ -12,20 +12,22 @@
     <link rel="shortcut icon" href="tesla_logo_icon_169601.ico">
     <link rel="stylesheet" href="account/accountStyle.css">
 </head>
-<body id="defaultvalue">
+<body>
     <header>
         <h1 class="mainIcon"><a href="main.html">Tesla</a></h1>
-        <button id="btnEn-Kz"><a href="accountKz.html">en-kz</a></button>
     </header>
     <div class="mainDiv">
-        <h1 class="centerWord">Sign in</h1>
-        <p>Email Address</p>
-        <input type="email">
-        <p>Password</p>
-        <input type="password">
+        <h1>Sign in</h1>
+        <div class="input-group mb-3 d-flex">
+            <input id="email"  type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+        </div>
+        <div class="input-group mb-3">
+            <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        </div>
         <hr>
         <button id="sign">Sign in</button>
-        <a href="main.html"><button id="canc">Cancel</button></a>
+        <a href="main.html"><button id="cancel">Cancel</button></a>
         <p class="question">Forgot email? | Forgot password?</p>
         <hr>
         <form action="CreateAccount.html"><button class="createBtn">CREATE ACCOUNT</button></form>
