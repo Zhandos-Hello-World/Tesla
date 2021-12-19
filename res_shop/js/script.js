@@ -3,10 +3,9 @@ const sr=ScrollReveal({
     duration:3100,
 });
 sr.reveal('.r',{
-    origin:'left',
+    origin:'top',
     interval: 500,
 });
-
 
 
 
@@ -148,6 +147,118 @@ function ChangeCurrencyToEUR4(){
      var a=document.getElementById("p4").innerHTML;
       document.getElementById("p4").innerHTML="31.14EUR";
      
+
+
+}
+function ChangeCurrencyToKZT5(){
+  document.getElementById("Currency5").innerHTML="Price in KZT:"
+  var a=document.getElementById("p5").innerHTML;
+   document.getElementById("p5").innerHTML="79,379KZT";
+
+}
+
+
+function ChangeCurrencyToUSD5(){
+
+
+  document.getElementById("Currency5").innerHTML="Price in USD:"
+  var a=document.getElementById("p5").innerHTML;
+   document.getElementById("p5").innerHTML="180USD";
+  
+
+
+}
+
+
+function ChangeCurrencyToEUR5(){
+   document.getElementById("Currency5").innerHTML="Price in EUR:"
+   var a=document.getElementById("p5").innerHTML;
+    document.getElementById("p5").innerHTML="160EUR";
+   
+
+
+}
+function ChangeCurrencyToKZT6(){
+  document.getElementById("Currency6").innerHTML="Price in KZT:"
+  var a=document.getElementById("p6").innerHTML;
+   document.getElementById("p6").innerHTML="194,448KZT";
+
+}
+
+
+function ChangeCurrencyToUSD6(){
+
+
+  document.getElementById("Currency6").innerHTML="Price in USD:"
+  var a=document.getElementById("p6").innerHTML;
+   document.getElementById("p6").innerHTML="450USD";
+  
+
+
+}
+
+
+function ChangeCurrencyToEUR6(){
+   document.getElementById("Currency6").innerHTML="Price in EUR:"
+   var a=document.getElementById("p6").innerHTML;
+    document.getElementById("p6").innerHTML="400EUR";
+   
+
+
+}
+function ChangeCurrencyToKZT7(){
+  document.getElementById("Currency7").innerHTML="Price in KZT:"
+  var a=document.getElementById("p7").innerHTML;
+   document.getElementById("p7").innerHTML="35,279KZT";
+
+}
+
+
+function ChangeCurrencyToUSD7(){
+
+
+  document.getElementById("Currency7").innerHTML="Price in USD:"
+  var a=document.getElementById("p7").innerHTML;
+   document.getElementById("p7").innerHTML="80USD";
+  
+
+
+}
+
+
+function ChangeCurrencyToEUR7(){
+   document.getElementById("Currency7").innerHTML="Price in EUR:"
+   var a=document.getElementById("p7").innerHTML;
+    document.getElementById("p7").innerHTML="72EUR";
+   
+
+
+}
+function ChangeCurrencyToKZT8(){
+  document.getElementById("Currency8").innerHTML="Price in KZT:"
+  var a=document.getElementById("p8").innerHTML;
+   document.getElementById("p8").innerHTML="1212740KZT";
+
+}
+
+
+function ChangeCurrencyToUSD8(){
+
+
+  document.getElementById("Currency8").innerHTML="Price in USD:"
+  var a=document.getElementById("p8").innerHTML;
+   document.getElementById("p8").innerHTML="2750USD";
+  
+
+
+}
+
+
+function ChangeCurrencyToEUR8(){
+   document.getElementById("Currency8").innerHTML="Price in EUR:"
+   var a=document.getElementById("p8").innerHTML;
+    document.getElementById("p8").innerHTML="2447EUR";
+   
 
 
 }
