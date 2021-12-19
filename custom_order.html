@@ -111,18 +111,24 @@
             <div class="firstDiv">
                 <h1>Credit calculator</h1>
                 <p>This is a preliminary calculation - not an offer</p>
-                <input type="text">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Model S</option>
+                    <option value="1">Model X</option>
+                    <option value="2">Model 3</option>
+                    <option value="3">Roadster</option>
+                    <option value="4">Cybertruck</option>
+                </select>
                 <p>credit term</p>
                 <div class="btnDiv">
-                    <button>6</button>
-                    <button>12</button>
-                    <button>18</button>
-                    <button>24</button>
-                    <button>36</button>
-                    <button>48</button>
-                    <button>60</button>
+                    <button type="button" class="btn btn-danger space rounded-pill">6</button>
+                    <button type="button" class="btn btn-danger space rounded-pill">12</button>
+                    <button type="button" class="btn btn-danger space rounded-pill">18</button>
+                    <button type="button" class="btn btn-danger space rounded-pill">24</button>
+                    <button type="button" class="btn btn-danger space rounded-pill">36</button>
+                    <button type="button" class="btn btn-danger space rounded-pill">48</button>
+                    <button type="button" class="btn btn-danger space rounded-pill">60</button>
                 </div>
-                <p>Time in months</p>
+                <p id="time">Time in months</p>
                 <p>Remuneration rate</p>
                 <h1>from 20.99%</h1>
                 <p>Monthly payment</p>
@@ -132,11 +138,17 @@
                 <h1>Fill up for offer</h1>
                 <p>For an accurate calculation, you must leave a request</p>
                 <div class="inputDiv">
-                    <input type="text" placeholder="ИИН">
-                    <input type="text" placeholder="Номер телефона">
-                    <input type="text" placeholder="Ежемесячный доход">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="ИИН">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Phone number">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Monthly income">
+                    </div>
                 </div>
-                <p>Продолжая я подтверждаю, что ознакомился с условиями соглашения и даю согласие на обработку своих персональных данных</p>
+                <p> Continuing, I confirm that I have read the terms of the agreement and agree to the processing of my personal data </p>
                 <a><button type="button" class="btn btn-secondary">Get car</button></a>
             </div>
         </div>
@@ -145,4 +157,5 @@
 
     <script type="text/javascript" src="res_custom_order/js/script.js"></script>
 </body>
+<script type="text/javascript" src="res_custom_order/js/Autoize.js"></script>
 </html>
