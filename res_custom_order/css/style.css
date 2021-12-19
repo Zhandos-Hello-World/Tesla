@@ -120,3 +120,37 @@ a{
         margin: 0;
     }
 }
+
+
+
+
+.creditDiv {
+    padding: 10%;
+    margin-top: 10%;
+    background-color: #bb0023;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.subDiv {
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    padding: 1%;
+}
+.firstDiv {
+    background-color: #FFFFFFFF;
+    padding: 5%;
+}
+.secondDiv {
+    background-color: #F7F7FAFF;
+    padding: 5%;
+    justify-content: space-between;
+}
+.btnDiv {
+    display: flex;
+}
+.inputDiv {
+    flex-flow: column;
+    display: flex;
+}
