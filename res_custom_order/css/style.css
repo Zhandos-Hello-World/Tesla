@@ -24,7 +24,7 @@ a{
     background: rgba(102, 102, 102, 0.5);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -153,7 +153,11 @@ a{
     background-color: #F7F7FAFF;
     color: #8C91B3FF;
     border: 0;
+}
+.space
 
+.wordL {
+    color: #D0D1E2FF;
 }
 .btnDiv {
     display: flex;
