@@ -211,7 +211,7 @@ body, html {
     margin-left: 10%;
 }
 .subHeader {
-    margin: 0 0.6rem;
+    margin: 0 1rem;
 }
 
 @media (max-width: 1500px) {
