@@ -154,7 +154,19 @@ a{
     color: #8C91B3FF;
     border: 0;
 }
-.space
+@media (max-width: 882px) {
+    .subDiv {
+        display: block;
+    }
+    .btnDiv {
+        flex-flow: column;
+    }
+
+}
+.btnsDiv {
+    display: flex;
+    margin-left: 2%;
+}
 
 .wordL {
     color: #D0D1E2FF;
