@@ -197,11 +197,12 @@ a {
 }
 .btn2{
     margin-top: 20px;
+
 }
 
 .btnWhite {
     text-align: center;
-    padding: 10px;
+    padding: 10px 30px;
     margin: auto;
     display: block;
     background-color: rgba(255, 255, 255, 0.7);
@@ -211,6 +212,7 @@ a {
     font-size: 13px;
     border-radius: 15px;
     border: 0px;
+
 }
 
 
