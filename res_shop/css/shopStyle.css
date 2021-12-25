@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: text1;
-    src: url(/Gotham-Font/Gotham-Bold.otf);
+    src: url(Gotham-Font/Gotham-Bold.otf);
 }
 
 .mainIcon {
@@ -25,7 +25,7 @@
     margin-left: 0px;
     padding: 60px 10px;
 }
-.c {
+.c ,.q {
     float: left;
     width: 33.33%;
     position: relative;
@@ -81,7 +81,7 @@
     padding: 90px;
 }
 
-#modal2 , #modal1 ,#modal3 , #modal4 {
+#modal2 , #modal1 ,#modal3 , #modal4 , #modal5 ,#modal6 , #modal7 ,#modal8{
     position: fixed;
     top: 0;
     left: 0;
@@ -93,13 +93,13 @@
     align-items: center;
     
 }
-.modal__window2 , .modal__window1 ,.modal__window3 , .modal__window4 {
+.modal__window2 , .modal__window1 ,.modal__window3 , .modal__window4 , .modal__window5 ,.modal__window6 ,.modal__window7 ,.modal__window8{
     position: relative;
     background-color: white;
     padding: 10px 0px;
   }
   
-  .modal__close2 ,  .modal__close1 , .modal__close3 ,  .modal__close4{
+  .modal__close2 ,  .modal__close1 , .modal__close3 ,  .modal__close4 , .modal__close5 , .modal__close6 , .modal__close7 , .modal__close8{
     position: absolute;
     top: -30px;
     right: 0;
@@ -120,6 +120,22 @@
     visibility: hidden;
     opacity: 0;
 }
+#modal5:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+#modal6:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+#modal7:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+#modal8:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
 .Apparel{
     padding: 70px 20px;
 }
@@ -132,3 +148,30 @@
     color: white;
     padding: 1px;
 }
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+  #Accessorise {
+    padding: 70px 20px; 
+  }
+ 

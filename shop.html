@@ -11,7 +11,9 @@
     <link rel="shortcut icon" href="/tesla_logo_icon_169601.ico">
     <link rel="stylesheet" href="res_shop/css/shopStyle.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-   
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -21,22 +23,20 @@
     <div class="container">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" id="myHeader">
             <div>
-                <h1 class="mainIcon"><a href="/main.html">Tesla</a></h1>
+                <h1 class="mainIcon"><a href="main.html">Tesla</a></h1>
             </div>
-    
-    
           <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2 btn">Login</button>
-            <button type="button" class="btn btn-primary btn">Sign-up</button>
+            <button type="button" class="btn btn-outline-primary me-2 btn"><a href="account.html" style="text-decoration: none;">Login</a></button>
+            <button type="button" class="btn btn-primary btn"><a href="CreateAccount.html" style="text-decoration: none;color: white;">Sign-up</a></button>
           </div>
         </header>
       </div>
+      
     <div class="r">
         <div class="c" id="c1">
         <div class="b">
           <a href="#slide1"><img src="res_shop/img/img 2.jpg" alt="Snow" style="width:100%"></a>
           <div class="text-block">
-            
             <p>Charging</p>
           </div>
         </div>
@@ -48,7 +48,7 @@
               <p>Apparel</p>
             </div>
         </div>
-        <div class="c" id="c1">
+        <div class="q" id="c1">
           <a href="#Accessorise"><img src="res_shop/img/img 3.jpg"Mountains" style="width:100%"></a>
           <div class="text-block">
             
@@ -126,7 +126,7 @@
                     Wall Connectors can power-share to maximize existing electrical capacity, automatically distributing power to charge multiple cars simultaneously.</p>
 
                   </div>
-                  <div class="col-md-4"style="padding:50px 40px">
+                  <div class="col-md-4"style="padding:px 40px">
                     <h3 id="Currency">Price in USD:<h3 id="p1">550USD</h3></h3>
                     <div style="padding: 10px 2px; max-width: 300px;">
                     <button class="btn btn-light" onclick="ChangeCurrencyToKZT2()">Change Currency To KZT</button>
@@ -153,7 +153,7 @@
                 <p>Perfectly pair your Wall Connector to the paint color of your Tesla vehicle with Wall Connector Color Matched Faceplate. Made from the same durable tempered glass as the original design, these faceplates offer a stylish alternative to your Tesla charging setup and easy installation. Available in Midnight Silver Metallic, Deep Blue Metallic, Red Multi-Coat and Solid Black.
                 </p>
                 </div>
-                <div class="col-md-4"style="padding:50px 40px">
+                <div class="col-md-4"style="padding:0px 40px">
                   <h3 id="Currency2">Price in USD:<h3 id="p2">100USD</h3></h3>
                   <div style="padding: 10px 2px; max-width: 300px;">
                   <button class="btn btn-light" onclick="ChangeCurrencyToKZT1()">Change Currency To KZT</button>
@@ -179,7 +179,7 @@
                 <h3>Wall Connector Pedestal</h3>
                 <p>The Wall Connector Pedestal is a rugged aluminum post designed for mounting both Gen 3 and Gen 2 Wall Connectors for stand-alone charging. With easy indoor and outdoor installation options, the Wall Connector Pedestal is ideal for any driveway, parking lot or property that requires a free-standing structure to support charging equipment. The Wall Connector Pedestal supports both single and dual mounted configurations for charging one or two Tesla vehicles at the same time.</p>
                 </div>
-                <div class="col-md-4"style="padding:50px 40px">
+                <div class="col-md-4"style="padding:0px 40px">
                   <h3 id="Currency3">Price in USD:<h3 id="p3">425USD</h3></h3>
                   <div style="padding: 10px 2px; max-width: 300px;">
                   <button class="btn btn-light" onclick="ChangeCurrencyToKZT3()">Change Currency To KZT</button>
@@ -204,14 +204,127 @@
               <div class="col-md-4">
                 <h3>Cable Organizer</h3>
                 <p>Store your Corded Mobile Connector with the newly redesigned Cable Organizer. This product features a sturdy bracket to keep your cables neatly stowed and a chassis holder to reduce additional wear and tear on your adaptor and outlet.</p>
-
+                
                 </div>
-                <div class="col-md-4"style="padding:50px 40px">
+                <div class="col-md-4"style="padding:0px 40px">
                   <h3 id="Currency4">Price in USD:<h3 id="p4">35USD</h3></h3>
                   <div style="padding: 10px 2px; max-width: 300px;">
                   <button class="btn btn-light" onclick="ChangeCurrencyToKZT4()">Change Currency To KZT</button>
                   <button class="btn btn-light" onclick="ChangeCurrencyToUSD4()">Change Currency To USD</button>
                   <button class="btn btn-light" onclick="ChangeCurrencyToEUR4()">Change Currency To EUR</button>
+                </div>
+                </div>
+            </div>
+             </div>
+      </div>
+      </div>
+      <div id="modal5">
+        <div class="modal__window5">
+          <a class="modal__close5" href="#">X</a>
+          <div class="content" style="max-width: 1000px; max-height: 600px;">
+            <div class="row item-block">
+              <div class="col-md-4">
+                
+                <img src="res_shop/img/modal5.jpg" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Model S All-Weather Interior Mats</h3>
+                <p>Model S All-Weather Interior Liners are made from thermoplastic elastomer material for ultimate protection and spatial coverage. Unlike traditional floor mats, liners are comprised of vertical walls that ensure maximum protection to the interior carpet and easy cleanup.</p>
+                
+                </div>
+                <div class="col-md-4"style="padding:0px 40px">
+                  <h3 id="Currency5">Price in USD:<h3 id="p5">180USD</h3></h3>
+                  <div style="padding: 10px 2px; max-width: 300px;">
+                  <button class="btn btn-light" onclick="ChangeCurrencyToKZT5()">Change Currency To KZT</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToUSD5()">Change Currency To USD</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToEUR5()">Change Currency To EUR</button>
+                </div>
+                </div>
+            </div>
+             </div>
+      </div>
+      </div>
+      <div id="modal6">
+        <div class="modal__window6">
+          <a class="modal__close6" href="#">X</a>
+          <div class="content" style="max-width: 1000px; max-height: 600px;">
+            <div class="row item-block">
+              <div class="col-md-4">
+                
+                <img src="res_shop/img/modal6.png" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Model S Roof Rack - Glass Roof</h3>
+                <p>Model S Roof Rack – Glass Roof was designed and engineered from the ground up for maximum aerodynamic efficiency, minimal interior noise and impact to range. The ultra-sleek attachment mechanism featuring die-cast towers and integrated locks makes for easy installation at home. The aluminum powder-coated cross bars include T-slots to seamlessly mount compatible attachments such as ski racks, bike racks and cargo boxes. Learn more about the Model S Roof Rack – Glass Roof and how to retrofit your vehicle on our support page.</p>
+              </div>
+                <div class="col-md-4"style="padding:0px 40px">
+                  <h3 id="Currency6">Price in USD:<h3 id="p6">450USD</h3></h3>
+                  <div style="padding: 10px 2px; max-width: 300px;">
+                  <button class="btn btn-light" onclick="ChangeCurrencyToKZT6()">Change Currency To KZT</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToUSD6()">Change Currency To USD</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToEUR6()">Change Currency To EUR</button>
+                </div>
+                </div>
+            </div>
+             </div>
+      </div>
+      </div>
+      <div id="modal7">
+        <div class="modal__window7">
+          <a class="modal__close7" href="#">X</a>
+          <div class="content" style="max-width: 1000px; max-height: 600px;">
+            <div class="row item-block">
+              <div class="col-md-4">
+                
+                <img src="res_shop/img/modal7.jpg" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Model S Rear Liftgate Sunshade</h3>
+                <p>Constructed of lightweight mesh fabric with a collapsible rigid frame, the rear sunshade blocks two thirds of solar thermal load without compromising rearward visibility. Easily removable, the sunshade is installed onto the interior of the rear hatch window. When removed, the shade collapses and stores in a 16-inch diameter pouch.</p>
+                </div>
+                <div class="col-md-4"style="padding:0px 40px">
+                  <h3 id="Currency7">Price in USD:<h3 id="p7">80USD</h3></h3>
+                  <div style="padding: 10px 2px; max-width: 300px;">
+                  <button class="btn btn-light" onclick="ChangeCurrencyToKZT7()">Change Currency To KZT</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToUSD7()">Change Currency To USD</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToEUR7()">Change Currency To EUR</button>
+                </div>
+                </div>
+            </div>
+             </div>
+      </div>
+      </div>
+      <div id="modal8">
+        <div class="modal__window8">
+          <a class="modal__close8" href="#">X</a>
+          <div class="content" style="max-width: 1000px; max-height: 600px;">
+            <div class="row item-block">
+              <div class="col-md-4">
+                
+                <img src="res_shop/img/modal8.png" alt="" style="width: 543px; height:434"  class="img-thumbnail">
+              </div>
+              
+              <div class="col-md-4">
+                <h3>Model S 19" Tempest Wheel and Winter Tire Package</h3>
+                <p>Outfit your Model S with 19" Tempest Wheels and Pirelli winter-rated tires for the icy months ahead.
+
+                  Includes:
+                  
+                  2x 19X9.5J ET40 Tempest Wheels
+                  2x 19X10.5J ET40 Tempest Wheels
+                  2x 255/45R19 Pirelli P ZERO WINTER Tires
+                  2x 285/40R19 Pirelli P ZERO WINTER Tires
+                  4x BLE tire pressure sensors</p>
+                </div>
+                <div class="col-md-4"style="padding:0px 40px">
+                  <h3 id="Currency8">Price in USD:<h3 id="p8">2750USD</h3></h3>
+                  <div style="padding: 10px 2px; max-width: 300px;">
+                  <button class="btn btn-light" onclick="ChangeCurrencyToKZT8()">Change Currency To KZT</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToUSD8()">Change Currency To USD</button>
+                  <button class="btn btn-light" onclick="ChangeCurrencyToEUR8()">Change Currency To EUR</button>
                 </div>
                 </div>
             </div>
@@ -233,7 +346,6 @@
                 <div class="p-4">
                   <h5>Men's Solar Roof Tee</h5>
                   <p class="small text-muted mb-0">$35</p>
-                  
                 </div>
               </div>
             </div>
@@ -245,7 +357,6 @@
                 <div class="p-4">
                   <h5>Chill Pullover Hoodie</h5>
                   <p class="small text-muted mb-0">$90</p>
-                  
                 </div>
               </div>
             </div>
@@ -280,7 +391,7 @@
      </div>
      </div>
      </div>
-     <div class="Accessorise" style="width:100%" id="Accessorise" >
+     <div class="Accessorise" style="width:100%; padding: 0px;" id="Accessorise" >
       <h1 style="font-family: iconT"></h1>
       <div class="container-fluid">
         <h1 style="font-family: iconT;">Accessories for your Tesla</h1>
@@ -293,7 +404,7 @@
               <div class="bg-white rounded shadow-sm"><img src="https://images-na.ssl-images-amazon.com/images/I/51+yjD8lP0L.jpg" alt="" class="img-fluid card-img-top" style="max-height:329px;object-fit: cover;"> <div class="p-4">
                   <h5>Model S All-Weather Interior Mats</h5>
                   <p class="small text-muted mb-0">$180</p>
-                  
+                  <a href="#modal5" class="btn btn-primary">View Details</a>
                 </div>
               </div>
             </div>
@@ -305,7 +416,7 @@
                 <div class="p-4">
                   <h5>Model S Roof Rack - Glass Roof</h5>
                   <p class="small text-muted mb-0">$450</p>
-                  
+                  <a href="#modal6" class="btn btn-primary">View Details</a>
                 </div>
               </div>
             </div>
@@ -317,7 +428,7 @@
                 <div class="p-4">
                   <h5>Model S Rear Liftgate Sunshade</h5>
                   <p class="small text-muted mb-0">$80</p>
-                 
+                  <a href="#modal7" class="btn btn-primary">View Details</a>
                 </div>
               </div>
             </div>
@@ -329,11 +440,11 @@
                 <div class="p-4">
                   <h5>Model S 19" Tempest Wheel and Winter Tire Package</h5>
                   <p class="small text-muted mb-0">$2,750</p>
+                  <a href="#modal8" class="btn btn-primary">View Details</a>
                 </div>
               </div>
             </div>
             <!-- End -->
-      
            
       
      </div>
