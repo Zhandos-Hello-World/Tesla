@@ -160,6 +160,13 @@ a{
     .btnDiv {
         flex-flow: column;
     }
+    .arrow-right{
+        display: none;
+
+    }
+    .arrow-left{
+        display: none;
+    }
 
 }
 .btnsDiv {
